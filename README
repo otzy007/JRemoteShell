@@ -1,0 +1,7 @@
+JRemoteShell is an application that provides a remote shell bash like.
+
+This application does not use encryption or authentication so use it at your
+own risk.
+
+To connect to the server you can use Putty with a raw connection or netcat:
+ * nc host 8100
