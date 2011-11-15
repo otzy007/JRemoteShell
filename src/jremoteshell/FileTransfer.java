@@ -1,9 +1,3 @@
-/*
- * File transfer implementation
- * Methods:
- * get
- * push
- */
 package jremoteshell;
 
 import java.io.DataInputStream;
@@ -18,9 +12,20 @@ import java.net.Socket;
  * @author Andrei G
  */
 
-class FileTransfer {
+/**
+ * File transfer implementation
+ */
+public class FileTransfer {
+    /**
+     * Listening port
+     */
     public static final int PORT = 8101;
 
+    /**
+     * Create the file transfer server
+     * @param cmd   can be put or get
+     * @param name  the name of the file
+     */
     FileTransfer(String cmd, String name) {
         ServerSocket serverSocket = null;
         

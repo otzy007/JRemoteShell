@@ -26,11 +26,10 @@ import java.util.Scanner;
 import jremoteshell.filebrowse.Directory;
 import jremoteshell.filebrowse.FileBrowser;
 
-
+/**
+ * Client's thread
+ */
 class ClientThread extends Thread {
-    /**
-     * Client's thread
-     */
     Socket socket = null;
     
     public ClientThread(Socket socket) {
@@ -122,10 +121,10 @@ class ClientThread extends Thread {
     } 
 }
 
+/**
+ * Server class
+ */
 public class JRemoteShell {
-    /**
-     * Server class
-     */
     public static final int PORT = 8100;
     
     public JRemoteShell() {

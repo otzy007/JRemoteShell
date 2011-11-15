@@ -10,34 +10,41 @@ import java.io.File;
  *
  * @author Andrei G
  */
-public class Directory {
-    
-    /**
-     * Directory related class
-     */
-    
+
+/**
+ * Directory related class
+ */
+public class Directory {    
     File dir;
     
+    /**
+     * Create a new Directory object
+     * @param dir   directory
+     */
     public Directory(String dir) {
         this.dir = new File(dir);
     }
-
+    
+    /**
+     * Create a new Directory object for current directory
+     */
     public Directory() {
         this.dir = new File(".");
     }
     
+    /**
+     * List directory content
+     */
     public String[] list() {
-       /**
-         * List directory content
-         */
         return dir.list();
-       
     }
     
+    /**
+     * Change the current directory
+     * @param   dir directory to change to
+     * @return  the directory changed to or null
+     */
     public String changedir(String dir) {
-        /**
-         * Change directory
-         */
         String newDir = new String();
         String oldDir = System.getProperty("user.dir");
         if (dir.substring(0,1).contains("/") ||
@@ -60,10 +67,11 @@ public class Directory {
        }
     }
     
+    /**
+     * Get the absolute path of working dir
+     * @return path of working dir
+     */
     public String pwd() {
-        /**
-         * print the absolute path of directory
-         */
         String pwd = dir.getAbsolutePath();
         
         pwd = pwd.substring(0, pwd.length() - 1);
@@ -74,6 +82,12 @@ public class Directory {
             return pwd;
     }
     
+    /**
+     * Get the absolute path of file/directory
+     * @param file
+     * @return the absolute path of file
+     * @throws StringIndexOutOfBoundsException 
+     */
     public String getAbsolutePath(String file) 
             throws StringIndexOutOfBoundsException {
         if (file.substring(0, 1).contains("/") ||
