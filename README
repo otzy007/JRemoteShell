@@ -5,3 +5,8 @@ own risk.
 
 To connect to the server you can use Putty with a raw connection or netcat:
  * nc host 8100
+
+To use "get" or "put" for file transfer you must first type put or get followed
+by the name of the file and then connect to port 8101 using nc.
+For get: nc host 8101 > file
+For put: nc host 8101 < get

@@ -2,5 +2,6 @@ Bugs:
 * mv does not work with absolute paths ??? weirdo
 
 Features:
++ apply GPL 3 license
 + tunnel ?
 ? uptime
