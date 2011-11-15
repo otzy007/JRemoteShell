@@ -10,7 +10,7 @@ package jremoteshell.filebrowse;
 
 /**
  *
- * @author oz
+ * @author Andrei G
  */
 
 import java.io.DataInput;
@@ -28,7 +28,7 @@ import java.util.logging.Logger;
 public class FileUtil {
     public static String getInfo(File f) {
         /**
-         * ia informatii despre fisier
+         * get File Informations
          */
         return (isDir(f) + trueFalse(f.canRead()) + trueFalse(f.canWrite()) 
                 + trueFalse(f.canExecute()) + " " + f.getAbsolutePath() + " "

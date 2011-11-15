@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author oz
+ * @author Andrei G
  */
 public class FileBrowser {
     Directory d;

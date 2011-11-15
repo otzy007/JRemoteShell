@@ -15,14 +15,8 @@ import java.net.Socket;
 
 /**
  *
- * @author oz
+ * @author Andrei G
  */
-
-// TODO: implementeaza transferul de fisiere
-// pt implementare ar putea exista mai multe posibilitati:
-// * get sa puna fisierul la un ip la un anumit port
-// sau sa stea ca un server si sa astepte sa iau fisierul
-// * put sa primeasca fisierul si sa il scrie unde trebuie
 
 class FileTransfer {
     public static final int PORT = 8101;
@@ -33,7 +27,7 @@ class FileTransfer {
         try {
             if (cmd.contentEquals("put")) {
                 /**
-                 * pune fisierul pe server
+                 * put the file
                  */
                 serverSocket = new ServerSocket(PORT);
                 Socket socket = serverSocket.accept();
@@ -53,7 +47,7 @@ class FileTransfer {
             
             if (cmd.contentEquals("get")) {
                 /**
-                 * ia fisierul de pe server
+                 * get the file
                  */
                 serverSocket = new ServerSocket(PORT);
                 Socket socket = serverSocket.accept();

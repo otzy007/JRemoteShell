@@ -8,7 +8,7 @@ import java.io.File;
 
 /**
  *
- * @author oz
+ * @author Andrei G
  */
 public class Directory {
     

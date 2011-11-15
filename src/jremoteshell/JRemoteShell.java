@@ -10,8 +10,7 @@
 package jremoteshell;
 
 /**
- *
- * @author oz
+ * @author Andrei G
  */
 
  
