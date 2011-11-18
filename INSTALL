@@ -1,0 +1,26 @@
+JRemoteShell compiling instructions
+
+Requierments 
+============ 
+In order to compile JRemoteShell you will need JDK (Java(TM) 2 Platform
+ Standard Edition Development Kit) and Apache Ant.
+
+Compile instructions
+====================
+To compile JRemoteShell go in the directory containing the sources and
+execute: 
+
+    ant
+
+Run instructions 
+================
+To start the application: 
+
+    java -jar dist/JRemoteShell.jar &
+
+To connect at your shell in Linux or Mac OS X:
+
+    nc localhost 8100
+
+In Windows you can use putty connecting at localhost port 8100 using a
+raw connection.
