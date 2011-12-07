@@ -5,3 +5,4 @@ Features:
 + apply GPL 3 license
 + tunnel ?
 ? uptime
+? recieve a broadcast message and reply to the sender with the ip of server ?
