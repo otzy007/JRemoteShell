@@ -14,3 +14,7 @@ by the name of the file and then connect to port 8101 using nc.
 
 For get: nc host 8101 > file
 For put: nc host 8101 < get
+
+To report issues, get the latest version or get help go to: 
+https://github.com/otzy007/JRemoteShell or 
+http://oprod.net/index.php/news/1-news/94-jremoteshell-a-simple-shell-server-written-in-java
